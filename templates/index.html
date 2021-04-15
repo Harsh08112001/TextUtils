@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+    <style>
+    body{
+        background-color: #002147;  
+        color:#32be8f;
+        margin-left:300px;  
+    }
+    .harsh{
+        margin-left:200px; 
+    }
+    .har{
+        margin-left:200px; 
+        border-radius: 5px;
+        background-color: #32be8f;  
+        color:#002147;
+        width:200px;
+        height:50px;
+        font-weight:bold;
+        font-size:20px;
+    }
+    </style>
+</head>
+<body>
+<h1>Welcome to the text analyzer. Enter your text below</h1>
+<form action='/analyze' method='get'>
+    <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
+    <text class="harsh">CHOOSE ANY ONE</text><BR>
+    <input class="harsh" type="checkbox" name="removepunc"> Remove Punctuations<br>
+    <input class="harsh" type="checkbox" name="capitalizefirst">Capitalize First<br>
+    <input class="harsh" type="checkbox" name="newlineremove">New Line Remove<br>
+    <input class="harsh" type="checkbox" name="spaceremove">Space Remove<br>
+    <input class="harsh" type="checkbox" name="charcount">Char Count<br>
+    <input class="harsh" type="checkbox" name="email">Extract Emails<br>
+    <br>
+    <button class="har" type='submit'> Analyze Text</button>
+
+</form>
+</body>
+</html>
